@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+     /* border: 1px solid red;   */
+}
+body{
+    width: 100%;
+   height: 200vh;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+#createGmail{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+}
+#account{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+#account img{
+    width: 7rem;
+}
+#account article{
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 2rem;
+
+}
+span{
+    color: red;
+}
+
+
+#sign{
+    display: flex;
+    justify-content: space-between;
+}
+#sign h6{
+    background-color: rgb(110, 110, 232);
+    border: none;
+    color: white;
+    border-radius: .2rem;
+    width: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#image{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#image img{
+    width: 15rem;
+}
+#image p{
+    font-size: 0.8rem;
+    width: 10rem;
+    text-align: center;
+}
+
+
+#card{
+    width: 30%;
+    height: 70vh;
+    background-color: aqua;
+}
+#head{
+    width: 100%;
+    height: 15vh;
+    background-color: rgb(88, 88, 239);
+}
+#profile{
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#profile img{
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+}
+#profile aside{
+    width: 100%;
+} 
+#profile aside span{
+    padding-right: .5rem;
+}
+#profile article{
+    width: 10rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+

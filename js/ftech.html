@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="container">
+
+    </div>
+
+    <style>
+        #container {
+            font-family: sans-serif;
+            display: grid;
+            grid-template-columns: auto auto auto;
+            gap: 1rem;
+            text-align: center;
+            font-size: .7rem;
+        }
+
+        #container img {
+            width: 50%;
+        }
+
+        .name {
+            color: red;
+        }
+
+        #container section {
+            border: 1px solid red;
+            width: 15rem;
+            height: 20rem;
+        }
+
+        #container button {
+            background-color: red;
+            border: none;
+        }
+    </style>
+
+
+
+
+    <script>
+
+        let container = document.querySelector('#container');
+
+
+        fetch("https://res.cloudinary.com/cliqtick/raw/upload/v1666847902/react-class/data_hfnwng.json")
+
+            .then((product) => product.json())
+            .then((product) => {
+                console.log(product);
+                product.forEach(e => {
+                    container.insertAdjacentHTML("afterbegin",
+                        `<div>
+                    <section>
+                <img src=${e.image.thumbnail}>
+                <p class = 'name'> ${e.name}</p>
+                <p> ${e.price}</p>
+                <p> ${e.description}</p>
+                <button>-</button>
+                <button onclick ="Addtocart(${JSON.stringify(e).split('"').join('&quot;')})">Add to Cart</button>
+                <button>+</button>
+                </section>
+                </div>`
+                    )
+                })
+            })
+            .catch((err) => console.error(err));
+
+
+        var cart = {
+            totalprice: 0,
+            products: []
+
+        }
+
+
+
+        const Addtocart = (arg) => {
+            console.log(arg);
+        }
+
+
+        if (cart.products.length) {
+            let temp = cart.products.filter(e => e.id == arg.id)
+            if (temp.length) {
+                cart.total += arg.price
+                cart.products = cart.products.map( e => {
+                    if (e.id == arg.id)
+                        return { ...e, Qty: e.Qty + 1 }
+                    else  return e
+                    
+                })
+            }
+        
+        else {
+            cart.products.push({ ...arg, Qty: 1 })
+            cart.total = arg.price
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

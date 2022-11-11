@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OPERATORS</title>
+</head>
+
+<body>
+
+    <script>
+
+        document.write('<h2>OPERATORS</h2>');
+
+        let br = "<br>";
+
+        let a = 50,
+         b = 30;
+
+         let o = "<h2>",
+            c = "</h2>";
+
+        //  let x = 40,
+        //  y = 30,
+        //  z;
+
+        document.write(o, " Addition " ,  a + b ,c, br);
+
+        document.write( a - b, br);
+
+        document.write( a * b, br);
+
+        document.write( a / b, br);
+
+        document.write( 7 % 35, br);
+
+        a++;
+        document.write(a, br);
+        document.write(a + 1, br);
+        document.write(a, br);
+
+        a--;
+        document.write(a, br);
+        document.write(a - 1, br);
+        document.write(a,);
+
+
+        document.write('<h2>ASSIGNMENT OPERATORS</h2>')
+
+        // a = a + b;
+        a += b;
+        document.write(br, a);
+
+        a -= b;
+        document.write(br, a);
+
+        a *= b;
+        document.write(br, a);
+
+        a /= b;
+        document.write(br, a);
+
+        a %= b;
+        document.write(br, a);
+
+
+        document.write('<h2>COMPARISON OPERATORS</h2>')
+
+
+        a *= b;
+        document.write(br, a , br);
+        document.write(30 == 30);
+
+
+    //    alert("your age");
+       let age = prompt('your Age ?');
+    //    confirm('wish to proceed ?');
+
+    if (age < 18 && age !=""){
+        alert('you must be 18 years to vote');
+    }
+    if (18 <= age){
+        alert('you Eligible to vote');
+        confirm("wish to proceed?");
+    }
+    if(age==''|| age == null){
+        alert("you did not enter anything..!");
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>

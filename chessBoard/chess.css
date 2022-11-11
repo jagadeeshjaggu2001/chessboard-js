@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    margin: auto;
+    width: 100%;
+    height: 100vh;
+}
+#board{
+    margin: 3rem auto;
+    width: 330px;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(8,1fr);
+    border: 5px solid black;
+}
+.box{
+    width: 40px;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0.5px solid black;
+}
+img{
+    width: 30px;
+}
+.hideImg{
+    display: none;
+}
+.possibleMove{
+    background-color: aqua !important;
+}
+.canKill{
+    background-color: green !important;
+}
+.cantKill{
+    background-color: red !important;
+}

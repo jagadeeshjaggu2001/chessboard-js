@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EVENTS</title>
+</head>
+
+<body>
+
+    <h1 onclick="handleclick()">heading</h1>
+
+    <div>
+        <p class="para1">para</p>
+    </div>
+
+    <div id="contact">
+        <p>
+        <p class="para2">
+            test</p>
+
+        </p>
+
+    </div>
+
+    <div id="div">
+        Js Event
+    </div>
+
+
+
+    <!-- <button id="check">click</button>
+    <button id="submit">submit</button>
+
+    <style>
+
+    </style>
+    <script>
+        let click = document.querySelector('#check');
+        let submit = document.querySelector('#submit');
+        let body = document.querySelector('body');
+
+
+        click.addEventListener('click', myFunction);
+        let temp;
+        function myFunction(){
+            console.log('click event');
+            temp = prompt('Enter');
+            console.log(temp);
+        }
+
+        submit.addEventListener('click', colorFun);
+
+        function colorFun(){
+            body.style.backgroundColor=temp;
+        }
+
+    </script> -->
+
+    <script>
+
+const handleclick = (e) =>{
+    let contact = document.querySelector('#contact');
+    contact.scrollIntoView({behavior:"smooth"})
+
+    let div = document.querySelector('#div');
+
+}
+console.handleclick =(e)=>{
+    console.log(EventTarget)
+}
+ let div = document.querySelector('#div');
+ div.addEventListener ('click', handleclick)
+
+ document.addEventListener('scroll',()=>{
+    console.log("scroll")
+ })
+    </script>
+</body>
+
+</html>

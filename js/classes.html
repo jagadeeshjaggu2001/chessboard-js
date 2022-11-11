@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // class Vehicle {
+        //     constructor(wheels, speed, time) {
+        //         this.wheels = wheels;
+        //         this.speed = speed;
+        //         this.usedTime = time;
+        //     }
+        //     getDistance() {
+        //         this.distanceTravelled = this.speed * this.usedTime
+        //     }
+
+        //     set setModel(arg) {
+        //         this.model = arg;
+        //     }
+
+        //     get getModel() {
+        //         return this.model;
+        //     }
+
+        //     static validateObj(arg) {
+        //         const keys = Object.keys(arg);
+        //         let isValid = keys.map(e => e == "wheels" || e == "speed" || e == "usedTime" || e == "distanceTravelled" || e == "model")
+        //         let temp = isValid.filter(e => e == false)[0];
+        //         return temp == undefined;
+        //     }
+        // }
+
+
+        // const bike = new Vehicle(2, 20, 400);
+        // bike.getDistance();
+        // console.log(bike.distanceTravelled);
+
+        // console.log(bike.getModel)
+        // bike.setModel = "royal enfield"
+        // console.log(bike.getModel)
+        // console.log(bike)
+
+        // const isValid = Vehicle.validateObj(bike);
+        // console.log(isValid);
+
+        
+        // INHERITANCE
+
+        class Person {
+            constructor(_age,_name,_gender){
+               this.age = _age;
+               this.name = _name;
+               this.gender = _gender;
+            }
+        }
+
+        class Student extends person {
+            constructor (_age,_name,_gender,_class,_school){
+                this.class = _class;
+                this.school = _school;
+            }
+
+            getDOB = () =>{
+                return new Date ("web Nov 02 2000");
+            }
+        }
+
+        const student = new Student(10,"wertyu","m","Full stack","cs");
+        const person = new Person(10, "asdfg","f");
+
+
+
+
+
+
+        // PRACTICE
+
+        // class mobiles {
+        //     constructor(n, p, r) {
+        //         this.name = n;
+        //         this.price = p;
+        //         this.ram = r;
+        //     }
+
+        //     updatedRam(uram) {
+        //         this.ram = uram
+        //     }
+        // }
+
+        // let m1 = new mobiles("realme 8", "16000", "8gb");
+
+        // let m2 = new mobiles("redmi 11", "20000", "8gb");
+
+
+
+        // console.log(m1);
+
+        // // console.log(m2);
+
+        // m1.updatedRam('12gb');
+
+        // console.log(m1)
+
+
+
+        // class mobiles {
+        //     constructor(n, r) {
+        //         this.name = n;
+        //         this.ram = r;
+        //     }
+
+        //     set priceSet(p){
+        //         if(p<=0){
+        //             alert ("price cannot be less than 0")
+        //         }
+        //         else{
+        //             this.price = p
+        //         }
+        //     }
+
+        //     set ramSet(s){
+        //         this.ram = r
+        //     }
+
+        //     get getName(){
+        //         return "mobile name:"+this.name+this.ram
+        //     }
+
+           
+        // }
+
+        // let m1 = new mobiles("realme 8", "8gb");
+
+
+        // console.log(m1)
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INDEX</title>
+</head>
+
+<body>
+    <div id="root"></div>
+
+    <style>
+        #root {
+            font-family: sans-serif;
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            gap: .5rem;
+            text-align: center;
+            font-size: .7rem;
+        }
+
+        #root img {
+            width: 50%;
+        }
+
+        #root section {
+            border: 1px solid red;
+            width: 10rem;
+            height: 20rem;
+            border-radius: 1rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            box-shadow: 1px 1px 1px 1px ;
+
+        }
+
+        #root button {
+            background-color: red;
+            border: none;
+        }
+    </style>
+    <script>
+        let root = document.querySelector('#root');
+
+        let page = 1;
+
+        const fetcdata = () => {
+
+            fetch("https://mock.redq.io/api/products?searchJoin=and&with=type%3Bauthor&limit=30&language=en&page=" + page + "&search=type.slug:grocery%3Bstatus:publish")
+                .then((items) => items.json())
+                .then((items) => {
+                    console.log(items);
+                    items.data.forEach(e => {
+
+                        root.insertAdjacentHTML("afterbegin",
+                            `<div>
+                                <section>
+                    <div>
+                        <img src = ${e.image.thumbnail}>
+                        </div>
+
+                        <p>${e.name}</p>
+                        <p>${e.price}</p>
+                        <p>${e.description}</p>
+                        </section>
+                    </div>`)
+
+                    });
+                    let load = document.getElementById("load");
+                    page++;
+                    // if (!load && items.current_page < items.last_page) {
+                    //     root.insertAdjacentHTML("afterend",
+                    //         `<div class="load">
+                    //         <button id="load">Load more </button>
+                    //         </div> 
+                    //     `)
+                    // }
+
+                    if (load) {
+
+                    }
+                    else {
+                        if (items.current_page < items.last_page) {
+                            root.insertAdjacentHTML("afterend",
+                                `<div class="load">
+                        <button id="load">Load more </button>
+                        </div> 
+                    `)
+                        }
+                    }
+                    load = document.getElementById("load");
+                    load.addEventListener('click', fetcdata)
+                })
+
+                .catch(e => console.log(e));
+        }
+
+        fetcdata();
+
+        let body = document.querySelector("body");
+        document.addEventListener('scroll', () => {
+            let scrollValue = window.pageYOffset;
+            let totalHeight = root.clientHeight;
+            const scroll = (scrollValue / totalHeight) * 100;
+            if (scroll > 67 && page < 10) {
+                page++;
+                fetcdata()
+            }
+        })
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    margin: auto;
+    width: 100%;
+    height: 100vh;
+}
+.container{
+    margin: auto;
+    width: 100%;
+    height: 100vh;
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.calculator{
+    padding: 2rem;
+    width: 50%;
+    height: 50vh;
+    border: 1px solid red;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(4,100px);
+}
+input{
+    grid-column: span 4;
+    height: 15vh;
+    font-size: 2rem;
+    text-align: end;
+}

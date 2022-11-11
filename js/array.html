@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARRAY</title>
+</head>
+
+<body>
+    <section>
+        <h4>RANDOM PASSSWORD</h4>
+        <p></p>
+        <button>Generate</button>
+    </section>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 100%;
+            height: 100vh;
+        }
+
+        section {
+            width: 40%;
+            height: 30vh;
+            border: 1px solid red;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+        }
+        p{
+            width: 5rem;
+            height: 1.3rem;
+            border: 1px solid black;
+            margin: 1rem 3.5rem;
+        }
+        button{
+            background-color: green;
+            color: white;
+            width: 6rem;
+            height: 2rem;
+            margin: 1rem 3rem;
+        }
+        
+    </style>
+    <script>
+        br = '<br>';
+
+        document.write("ARRAY METHODS", br);
+        // let example = ['WE', 'ARE', 'LEARNING', 'JAVASCRIPT'];
+
+        // let user = {
+        //     name: 'DEVELOPER',
+        //     age: 22,
+        //     'id Admin': true
+
+        // }
+        // console.log=(user['is Admin']);
+
+        // let person={};
+        // person=Object.assign({},user);
+        // delete person.isAdmin;
+        // console.log(person);
+
+
+        // let example = ['WE', 'ARE', 'LEARNING', 'JAVASCRIPT'];
+        // slice(start,end(end excludes))
+        // console.log(example.slice(0, 3));
+        // console.log(example.slice(-1));
+        // console.log(example.slice(-2));
+
+        // splice(start,count,adding elements)
+
+        // example.splice(4, 0, 'web development');
+        // console.log(example);
+        // example.splice(5, 0, 'add', 'add');
+        // console.log(example);
+
+        // SORT METHOD
+
+        // let data = [4, 25, 36, 7];
+        // let check = ['k', 'h', 't', 'm']
+
+        // console.log(data.sort((a, b) => {
+        //     if (a > b) return -1
+        //     else if (a > b) return 1
+        //     return 0
+        // }));
+
+
+
+
+        // let std = [
+
+
+        //     {
+        //         id: 1,
+        //         name: "j",
+        //         marks: 55
+
+        //     },
+        //     {
+        //         id: 2,
+        //         name: "a",
+        //         marks: 60
+        //     },
+        //     {
+        //         id: 3,
+        //         name: "g",
+        //         marks: 35
+        //     }
+        // ]
+
+
+
+
+        // sortedArray = std.sort((a, b) => {
+        //     let x = a.marks
+        //     let y = b.marks
+        //     if (x < y) return -1
+        //     else if (x > y) return 1
+        //     return 0
+
+        // })
+        // console.log(sortedArray);
+
+        // // FOREACH METHOD
+
+        // num = [5, 66, 77, 44, 37, 89];
+        // num.forEach((e, i, a) => {
+        //     console.log(`${e}at index ${i}inarray${a}`)
+        // })
+        // num.forEach((e) => {
+        //     console.log(e * 10);
+        // })
+
+        // let x = num.every((e, i) => e > 10);
+        // console.log(x);
+
+        // x = num.some((e, i) => e > 10);
+        // console.log(x);
+
+        // // MAP METHOD
+
+        // let ex_map = num.map((e) => {
+        //     return (e * 10);
+        // })
+        // console.log(ex_map);
+
+        // // FILTER METHOD
+
+        // let ex_arr = [4, 88, undefined, true, null, NaN, 'javascript']
+        // console.log(ex_arr.filter((e, i) => e));
+        // console.log(ex_arr.includes(4));
+        // console.log(ex_arr.indexOf(4));
+
+
+        // // FOR OF
+
+        // num = [4, 55, 6, 82, 71, 89, 70];
+        // sum = 0;
+        // for (let x of num) {
+        //     sum += x;
+        // }
+        // console.log(sum);
+
+        // // FOR IN
+
+        // num = [4, 55, 6, 82, 71, 89, 70];
+        // sum = 0;
+        // for (let x in num) {
+        //     sum += num[x];
+        // }
+        // console.log(sum);
+
+        // // CONTACT
+
+        // let a = [4, 5, 7, 8, 9];
+        // let b = [55, 66, 77, 88];
+
+        // b = b.concat(a);
+        // console.log(b);
+
+        // // JOIN METHOD
+
+        // console.log(b.join('-'));
+        // console.log(b.join('*'));
+        // console.log(b.join('+'));
+
+        document.write("slice");
+
+        // let data = [44, 55, 66, 77, 88];
+
+        // // console.log(data.slice(0,4));
+
+        // let result = data.forEach((e, i) => {
+        //     console.log(e * 3);
+        //     //  temp.push(e * 3);
+        //     return e * 3;
+        // })
+
+        // console.log(result);
+
+        // let temp = [];
+
+        // let store = data.forEach((e, i) => {
+        //     console.log(e * 3);
+        //     temp.push(e * 3);
+
+        // })
+
+        // let InMap = data.map((e, i) => e * 3);
+
+
+
+        // let example = [22, 45, 34, 33, 11];
+
+
+        // for (let i of example) {
+        //     if (i % 2 == 0) {
+        //         console.log(i);
+        //     }
+        // }
+
+        // let filter = data.filter((e, i) => e % 2 == 0);
+
+        // console.log(filter);
+
+
+     // STRING METHODS
+
+        //  let user = 'DEVELOPER';
+
+        //  console.log(user.length);
+
+        //  temp = user.split('').join('-');
+
+        //  console.log(user.startsWith('D'));
+        //  console.log(user.startsWith('DEV'));
+
+        //  console.log(user.endsWith('ER'));
+        //  console.log(user.includes('PER'));
+        //  console.log(user.charAt(0));
+        //  console.log(user.trim());
+
+        // console.log(user.length);
+        //  console.log(user.split(''));
+
+        //  console.log(user.split('').reverse('').join('-'));
+
+        //  user = 'WE ARE DEVELOPERS';
+
+        // console.log(user.split('').reverse('').join(' '));
+
+
+        //  let key = '';
+        // let key_2 = key.split('').reverse().join('');
+
+        //  if (key == key_2) {
+        //     console.log(45 == 45);
+        //  }
+
+
+
+        // let char = 'abcdefghijklmnopqrstuvwxyz123456789@.*&^%$#$%';
+        // let temp = [];
+        // let p = document.querySelector('p');
+
+        // let gen = document.querySelector('button');
+
+        // console.log(temp.join(''))
+        // gen.addEventListener('click', () => {
+        //     for (i = 0; i < 5; i++) {
+        //         let emp = Math.trunc(Math.random() * char.length);
+
+        //         temp.push(char.charAt(emp));
+        //     }
+        //     p.innerHTML = temp.join('').toLowerCase();
+        //     temp = [];
+        // })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

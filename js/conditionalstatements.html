@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONDITIONAL STATEMENT</title>
+    <style>
+        h1 {
+            text-align: center;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>CONDITIONAL STATEMENTS</h1>
+    <script>
+
+        // let a = 11;
+
+        //  if (a > 9) {
+        //    document.write('a is greater than 9');
+        //  }
+        //   if (a == 11){
+        //       document.write("a is greater than 8");
+        //   }
+        //   else if(a==8){
+        //       document.write('a is equals to 8');
+        //   }
+        //  else {
+        //      document.write('a is less than 9');
+        //  }
+
+        // let role = confirm("BOSS ?");
+
+        // let user = prompt("Enter year ?");
+        // let output;
+
+        // if (isFinite(user)) {
+        //     if (user % 100 == 0) {
+        //         if (user % 400 == 0) {
+        //             document.write("<h1>" + user + "LEAP YEAR</h1>");
+        //         }
+        //         else {
+        //             document.write("<h1>" + user + "NON LEAP YEAR</h1>");
+        //         }
+        //     }
+        //     else {
+        //         if (user % 4 == 0) {
+        //             document.write("<h1>" + user + "LEAP YEAR</h1>");
+        //         }
+        //         else {
+        //             document.write("<h1>" + user + "NON LEAP YEAR</h1>");
+        //         }
+        //     }
+
+        // }
+        // else{
+        //     alert("INVALID INPUT");
+        // }
+        // document.write(output);
+
+        // password = "jaggu";
+        // let role = confirm("BOSS ?");
+
+
+
+
+        // if (role == true) {
+        //     let boss = prompt("enter password");
+        //     if (boss == password) {
+        //         document.write("ADMIN LOGIN SUCCESS");
+        //     }
+        //     else {
+        //         alert("Wrong password,recheck");
+        //     }
+        // }
+        // else {
+ 
+        //    let emp = prompt("enter your name");
+        //    let pass = prompt(`hello ${emp} Enter your password?`);
+
+        //    if (pass == "jagadesh"){
+        //     document.write(`<h1>${emp}LOGIN SUCCESS</h1>`);
+        //    }
+        //    else{
+        //     alert("wrong password");
+        //    }
+        // }
+
+    //  (condition)?true:false;
+
+    </script>
+
+    <h2>SWITCH CASE</h2>
+
+    <script>
+        let day = new Date().getDay();
+        let print;
+
+        switch (day) {
+            case 0:
+                print = "TODAY SUNDAY";
+                break;
+            case 1:
+                print = "TODAY MONDAY";
+                break;
+            case 2:
+                print = "TODAY TUEASDAY";
+                break;
+            case 3:
+                print = "TODAY WEDNESDAY";
+                break;
+            case 4:
+                print = "TODAY THURSDAY";
+                break;
+            case 5:
+                print = "TODAY FRIDAY";
+                break;
+            case 6:
+                print = "TODAY SATURDAY";
+                break;
+            default:
+                print = "Invalid input";
+                break;
+
+        }
+        let br = '<br>';
+
+        document.write(print, br);
+        let date = new Date().getDate();
+        let month = new Date().getMonth() + 1;
+        let year = new Date().getFullYear();
+        let hours = new Date().getHours();
+        let minutes = new Date().getMinutes();
+        let seconds = new Date().getSeconds();
+
+        document.write(`${date}/ ${month}/ ${year}/ ${hours}: ${minutes}:${seconds}`);
+
+
+
+
+
+
+
+    </script>
+
+
+
+
+
+
+</body>
+
+</html>

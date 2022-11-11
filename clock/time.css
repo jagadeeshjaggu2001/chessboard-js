@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    display: flex;
+}
+main{
+    margin: auto;
+    width: 40rem;
+    height: 40rem;
+    background-color: rgb(16, 2, 29);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+section{
+    width: 30rem;
+    height: 30rem;
+    background-color: rgb(25, 25, 244);
+    border-radius: 50%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+}
+#sec{
+    width: 0.1rem;
+    height: 12rem;
+    background-color: white;
+    position: absolute;
+    top: 3rem;
+    transform-origin: bottom;
+    /* animation: anim_article1 60s ease infinite; */
+}
+#min{
+    width: 0.3rem;
+    height: 10rem;
+    background-color: white;
+    position: absolute;
+    top: 5rem;
+    transform-origin: bottom;
+    /* animation: anim_article2 3600s ease infinite; */
+}
+#hr{
+    width: 0.5rem;
+    height: 8rem;
+    background-color: white;
+    position: absolute;
+    top: 7rem;
+    transform-origin: bottom;
+    /* animation: anim_article2 216000s ease infinite; */
+}
+aside{
+    width: 1rem;
+    height: 1rem;
+    background-color: white;
+    border-radius: 50%;
+    position: relative;
+}
+ul li:nth-child(1){
+    width: 1rem;
+    text-align: center;
+    top: 0;
+    list-style: none;
+    background-color: white;
+    position: absolute;
+}
+ul li:nth-child(2){
+    width: 1rem;
+    text-align: center;
+    right: 0;
+    list-style: none;
+    background-color: white;
+    position: absolute;
+}
+ul li:nth-child(3){
+    width: 1rem;
+    text-align: center;
+    bottom: 0;
+    list-style: none;
+    background-color: white;
+    position: absolute;
+}
+ul li:nth-child(4){
+    width: 1rem;
+    text-align: center;
+    left: 0;
+    list-style: none;
+    background-color: white;
+    position: absolute;
+}
+
+/* @keyframes anim_article1{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+@keyframes anim_article2{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+@keyframes anim_article3{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+} */

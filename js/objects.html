@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OBJECTS</title>
+</head>
+
+<body>
+    <script>
+        // let user = {};
+        // console.log(typeof user);
+
+        // user = {
+        //     id: 01,
+        //     name: 'jagadeesh',
+        //     age: 21,
+        //     place: 'vizag',
+        //     isAdmin: true,
+        //     check: function () {
+        //         console.log("object method");
+        //     },
+        // };
+
+        // user.check()
+        //     console.table(user);
+        //     console.log(user.place);
+        //     console.log(user["place"]);
+
+        //     user.name="PROGRAMMER";
+        //     console.table(user);
+
+        //     user.role="FRONTEND";
+        //     console.table(user);
+
+
+
+        // let jagga = {};
+        // console.log(typeof jagga);
+
+        // jagga = {
+        //     name: "jagadeesh",
+        //     age: 21,
+        //     skills: "frontend devloper",
+        //     education: "graduation",
+        //     isAdmin: true,
+        //     check: function () {
+        //         console.log(this.name, this.age, this.skills, this.education,);
+        //     },
+        // };
+        // jagga.check()
+        // console.table(jagga);
+
+        // jagga.place = "vizag";
+        // console.table(jagga);
+
+        // console.log("name" in user);
+
+        // delete user.name;
+        // console.log("name" in user);
+
+        // for (let data in jagga) {
+        //     document.write(jagga[data], "<br>")
+        // }
+
+
+
+        document.write("ARRAY");
+
+
+        let example = new Array();
+        example = [];
+        example = [true, null, undefined, 'javascript', 100];
+        console.log(typeof example);
+        console.log(example.length);
+
+        example[4] = "last";
+        example[5] = "PHP";
+        console.log(example[4]);
+        console.log(example[example.length - 1]);
+
+        for (let i of example) {
+            console.log(i);
+        }
+
+        for (let i in example) {
+            console.log(i);
+        }
+
+        let fruits = ["apple", "lemon", "orange", "pineapple"];
+
+        fruits.pop();
+        console.log(fruits);
+        fruits.push("goa");
+        console.log(fruits);
+        fruits.shift();
+        console.log(fruits);
+        fruits.unshift("banana");
+        console.log(fruits);
+
+        for (let i in fruits) {
+            console.log(i);
+        }
+
+        for (let i of fruits) {
+            console.log(i);
+        }
+
+
+        for (i = 0; i < fruits.length; i++) {
+            console.log(fruits[i]);
+        }
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>
