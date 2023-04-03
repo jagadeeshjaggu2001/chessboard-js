@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Exam</title>
+</head>
+
+<body>
+
+
+    <h2>Duplicate Numbers</h2>
+    <script>
+        let arry = [1, 2, 1, 3, 4, 3, 5];
+
+        let Duplicates = arry => arry.filter((item, index) => arry.indexOf(item) !== index)
+        let duplicateElement = Duplicates(arry);
+        document.write(duplicateElement);
+    </script>
+
+
+
+    <h2>Length of a Nested Array</h2>
+    <script>
+   let a = ([1,[2,3]]);
+   function arr_len(){
+    for(let i in a){
+        document.write(a[i],"<br>")
+    } 
+    document.write (a.length + 1);
+   }
+   arr_len();
+
+</script>
+
+
+</body>
+
+</html>

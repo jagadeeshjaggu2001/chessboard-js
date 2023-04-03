@@ -1,0 +1,7 @@
+Reference website url :- https://d-themes.com/react/porto/demo30/
+
+
+API Links for products in each category
+
+Best Selling Gifts :- https://res.cloudinary.com/dwdy4lewd/raw/upload/v1668789718/React%20Class/A.%20Jagadeesh/best_selling_q4qwmi.json
+Our Recommendations :- https://res.cloudinary.com/dwdy4lewd/raw/upload/v1668789718/React%20Class/A.%20Jagadeesh/featured_tv0bcq.json
